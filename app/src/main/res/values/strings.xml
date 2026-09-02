@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMB Files</string>
+    <string name="host_label">ホスト (IP)</string>
+    <string name="share_label">共有名</string>
+    <string name="user_label">ユーザー名</string>
+    <string name="pass_label">パスワード</string>
+    <string name="save">保存して接続テスト</string>
+    <string name="hint">保存すると、Android 標準の「ファイル」アプリの左メニューに表示されます。</string>
+    <string name="open_share">共有を開く</string>
+    <string name="open_share_short">共有</string>
+    <string name="no_document_browser">この端末には SAF 対応のファイルブラウザがありません</string>
+    <string name="hint_configured">この共有は、他アプリのファイル選択画面にも常に表示されます。</string>
+</resources>
