@@ -1,5 +1,7 @@
 # SMB Documents Provider
 
+**English** | [日本語](README.ja.md)
+
 Exposes an SMB share to Android's Storage Access Framework, so it appears as a location
 inside the system Files app and in every app's file picker. There is no browsing UI of its
 own — that is the point. The one screen it has collects credentials.
