@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SMB Files</string>
-    <string name="host_label">ホスト (IP)</string>
-    <string name="share_label">共有名</string>
-    <string name="user_label">ユーザー名</string>
-    <string name="pass_label">パスワード</string>
-    <string name="save">保存して接続テスト</string>
-    <string name="hint">保存すると、Android 標準の「ファイル」アプリの左メニューに表示されます。</string>
-    <string name="open_share">共有を開く</string>
-    <string name="open_share_short">共有</string>
-    <string name="no_document_browser">この端末には SAF 対応のファイルブラウザがありません</string>
-    <string name="hint_configured">この共有は、他アプリのファイル選択画面にも常に表示されます。</string>
+    <!-- The app name is a proper noun; it stays as-is in every locale. -->
+    <string name="app_name" translatable="false">SMB Files</string>
+
+    <string name="host_label">Host (IP)</string>
+    <string name="share_label">Share name</string>
+    <string name="user_label">Username</string>
+    <string name="pass_label">Password</string>
+    <string name="save">Save and test connection</string>
+    <string name="hint">Once saved, this share appears in your file browser and in every app\'s file picker.</string>
+
+    <string name="open_share">Open share</string>
+    <string name="open_share_short">Share</string>
+    <string name="no_document_browser">This device has no file browser that supports the Storage Access Framework</string>
+
+    <string name="status_missing_fields">Host and share name are required</string>
+    <string name="status_connecting">Connecting…</string>
+    <string name="status_connected">Connected — %1$d items at the root.</string>
+    <string name="status_failed">Connection failed: %1$s</string>
+    <string name="toast_saved">Saved</string>
 </resources>

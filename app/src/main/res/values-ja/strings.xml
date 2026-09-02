@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="host_label">ホスト (IP)</string>
+    <string name="share_label">共有名</string>
+    <string name="user_label">ユーザー名</string>
+    <string name="pass_label">パスワード</string>
+    <string name="save">保存して接続テスト</string>
+    <string name="hint">保存すると、ファイルブラウザと各アプリのファイル選択画面に表示されます。</string>
+
+    <string name="open_share">共有を開く</string>
+    <string name="open_share_short">共有</string>
+    <string name="no_document_browser">この端末には SAF に対応したファイルブラウザがありません</string>
+
+    <string name="status_missing_fields">ホストと共有名は必須です</string>
+    <string name="status_connecting">接続中…</string>
+    <string name="status_connected">接続成功 — ルートに %1$d 件。</string>
+    <string name="status_failed">接続失敗: %1$s</string>
+    <string name="toast_saved">保存しました</string>
+</resources>

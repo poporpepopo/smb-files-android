@@ -83,11 +83,11 @@ class SettingsActivity : AppCompatActivity() {
             password = pass.text.toString(),
         )
         if (!cfg.isComplete) {
-            status.text = "ホストと共有名は必須です"
+            status.setText(R.string.status_missing_fields)
             return
         }
 
-        status.text = "接続中…"
+        status.setText(R.string.status_connecting)
         io.execute {
             val result = runCatching {
                 SmbConnection.invalidate()
@@ -99,11 +99,10 @@ class SettingsActivity : AppCompatActivity() {
                     SmbConnection.invalidate()
                     notifyRootsChanged()
                     openShare.visibility = View.VISIBLE
-                    status.text = "接続成功 — ルートに $count 件。\n" +
-                        "「ファイル」アプリの左メニューに表示されます。"
-                    Toast.makeText(this, "保存しました", Toast.LENGTH_SHORT).show()
+                    status.text = getString(R.string.status_connected, count)
+                    Toast.makeText(this, R.string.toast_saved, Toast.LENGTH_SHORT).show()
                 }.onFailure { e ->
-                    status.text = "接続失敗: ${e.message}"
+                    status.text = getString(R.string.status_failed, e.message ?: e.toString())
                 }
             }
         }
